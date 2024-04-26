@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ngy-cQ-klV">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dashboard-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Dashboard" id="BYZ-38-t0r" customClass="ViewController" customModule="CheckMyLiquid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="qnE-pi-bvi">
+                                <rect key="frame" x="20" y="167" width="354" height="136"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9zp-2S-3fp" customClass="ShadowView" customModule="CheckMyLiquid" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="101" height="136"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="MmP-d7-XeG">
+                                                <rect key="frame" x="5" y="8" width="91" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Water" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIf-NI-v2V">
+                                                        <rect key="frame" x="0.0" y="0.0" width="39" height="30"/>
+                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="14"/>
+                                                        <color key="textColor" red="0.2201296231" green="0.52750155379999997" blue="0.99843409439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="water" translatesAutoresizingMaskIntoConstraints="NO" id="ksv-r6-xPA">
+                                                        <rect key="frame" x="61" y="0.0" width="30" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="30" id="bfL-6N-pXs"/>
+                                                            <constraint firstAttribute="height" constant="30" id="kU6-e2-hag"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="CIf-NI-v2V" firstAttribute="top" secondItem="MmP-d7-XeG" secondAttribute="top" id="5ge-jp-kIW"/>
+                                                    <constraint firstAttribute="bottom" secondItem="CIf-NI-v2V" secondAttribute="bottom" id="I2F-uK-TFo"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5Vx-Ge-QBa">
+                                                <rect key="frame" x="10" y="78" width="81" height="22.333333333333329"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="250 ML" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oca-gn-CYQ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="81" height="22.333333333333332"/>
+                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="17"/>
+                                                        <color key="textColor" red="0.2201296231" green="0.52750155379999997" blue="0.99843409439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="oca-gn-CYQ" firstAttribute="top" secondItem="5Vx-Ge-QBa" secondAttribute="top" id="NQJ-zz-mdT"/>
+                                                    <constraint firstAttribute="trailing" secondItem="oca-gn-CYQ" secondAttribute="trailing" id="ipp-AP-waX"/>
+                                                    <constraint firstItem="oca-gn-CYQ" firstAttribute="leading" secondItem="5Vx-Ge-QBa" secondAttribute="leading" id="yH5-HQ-e0e"/>
+                                                    <constraint firstAttribute="bottom" secondItem="oca-gn-CYQ" secondAttribute="bottom" id="yg0-bc-Ap4"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="5Vx-Ge-QBa" firstAttribute="leading" secondItem="9zp-2S-3fp" secondAttribute="leading" constant="10" id="2GM-pa-CcX"/>
+                                            <constraint firstItem="5Vx-Ge-QBa" firstAttribute="top" secondItem="MmP-d7-XeG" secondAttribute="bottom" constant="40" id="KO1-cz-4pd"/>
+                                            <constraint firstItem="MmP-d7-XeG" firstAttribute="leading" secondItem="9zp-2S-3fp" secondAttribute="leading" constant="5" id="PVS-h7-ICL"/>
+                                            <constraint firstAttribute="bottom" secondItem="5Vx-Ge-QBa" secondAttribute="bottom" constant="35.670000000000002" id="Xv1-cI-99D"/>
+                                            <constraint firstItem="MmP-d7-XeG" firstAttribute="top" secondItem="9zp-2S-3fp" secondAttribute="top" constant="8" id="aeG-GB-aJp"/>
+                                            <constraint firstAttribute="trailing" secondItem="5Vx-Ge-QBa" secondAttribute="trailing" constant="10" id="is0-OG-biP"/>
+                                            <constraint firstAttribute="trailing" secondItem="MmP-d7-XeG" secondAttribute="trailing" constant="5" id="tBT-ef-Rzn"/>
+                                            <constraint firstAttribute="width" constant="101" id="yUh-n6-Hkb"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TaP-rv-EgW" customClass="ShadowView" customModule="CheckMyLiquid" customModuleProvider="target">
+                                        <rect key="frame" x="126" y="0.0" width="101" height="136"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="Gsp-TN-0cB">
+                                                <rect key="frame" x="5" y="8" width="91" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mojito" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R95-84-DJH">
+                                                        <rect key="frame" x="0.0" y="0.0" width="39" height="30"/>
+                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="14"/>
+                                                        <color key="textColor" red="0.2201296231" green="0.52750155379999997" blue="0.99843409439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mojito" translatesAutoresizingMaskIntoConstraints="NO" id="bcb-PB-kfG">
+                                                        <rect key="frame" x="61" y="0.0" width="30" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="30" id="VPl-ig-9IP"/>
+                                                            <constraint firstAttribute="height" constant="30" id="mPK-RC-a34"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="R95-84-DJH" secondAttribute="bottom" id="8eI-72-JCR"/>
+                                                    <constraint firstItem="R95-84-DJH" firstAttribute="top" secondItem="Gsp-TN-0cB" secondAttribute="top" id="gY9-dh-Kk2"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="T0Q-2N-0tG">
+                                                <rect key="frame" x="10" y="78" width="81" height="22.333333333333329"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="250 ML" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="055-EL-hdo">
+                                                        <rect key="frame" x="0.0" y="0.0" width="81" height="22.333333333333332"/>
+                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="17"/>
+                                                        <color key="textColor" red="0.2201296231" green="0.52750155379999997" blue="0.99843409439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="055-EL-hdo" firstAttribute="leading" secondItem="T0Q-2N-0tG" secondAttribute="leading" id="7Nc-O0-C0b"/>
+                                                    <constraint firstItem="055-EL-hdo" firstAttribute="top" secondItem="T0Q-2N-0tG" secondAttribute="top" id="Rr2-y1-XOX"/>
+                                                    <constraint firstAttribute="bottom" secondItem="055-EL-hdo" secondAttribute="bottom" id="Uxc-Xu-XVe"/>
+                                                    <constraint firstAttribute="trailing" secondItem="055-EL-hdo" secondAttribute="trailing" id="r40-4B-ORz"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="T0Q-2N-0tG" firstAttribute="leading" secondItem="TaP-rv-EgW" secondAttribute="leading" constant="10" id="Ahf-St-Qj4"/>
+                                            <constraint firstAttribute="bottom" secondItem="T0Q-2N-0tG" secondAttribute="bottom" constant="35.670000000000002" id="J9B-tP-mjc"/>
+                                            <constraint firstAttribute="trailing" secondItem="T0Q-2N-0tG" secondAttribute="trailing" constant="10" id="Nj9-3x-abb"/>
+                                            <constraint firstAttribute="width" constant="101" id="Ugq-OK-HLh"/>
+                                            <constraint firstAttribute="trailing" secondItem="Gsp-TN-0cB" secondAttribute="trailing" constant="5" id="fh3-fR-zbD"/>
+                                            <constraint firstItem="Gsp-TN-0cB" firstAttribute="leading" secondItem="TaP-rv-EgW" secondAttribute="leading" constant="5" id="lcu-7C-QCR"/>
+                                            <constraint firstItem="T0Q-2N-0tG" firstAttribute="top" secondItem="Gsp-TN-0cB" secondAttribute="bottom" constant="40" id="sIx-W6-ufk"/>
+                                            <constraint firstItem="Gsp-TN-0cB" firstAttribute="top" secondItem="TaP-rv-EgW" secondAttribute="top" constant="8" id="uUp-FH-YW8"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="83p-OK-1p2" customClass="ShadowView" customModule="CheckMyLiquid" customModuleProvider="target">
+                                        <rect key="frame" x="252" y="0.0" width="102" height="136"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="Hde-T9-Gp4">
+                                                <rect key="frame" x="5" y="8" width="92" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Juice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30k-bd-Q3C">
+                                                        <rect key="frame" x="0.0" y="0.0" width="34.333333333333336" height="30"/>
+                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="14"/>
+                                                        <color key="textColor" red="0.2201296231" green="0.52750155379999997" blue="0.99843409439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="juice" translatesAutoresizingMaskIntoConstraints="NO" id="p6O-Uu-XcH">
+                                                        <rect key="frame" x="62" y="0.0" width="30" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="30" id="DcC-nv-EnF"/>
+                                                            <constraint firstAttribute="height" constant="30" id="tVI-T1-fsL"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="30k-bd-Q3C" firstAttribute="top" secondItem="Hde-T9-Gp4" secondAttribute="top" id="0ml-No-TSA"/>
+                                                    <constraint firstAttribute="bottom" secondItem="30k-bd-Q3C" secondAttribute="bottom" id="c0d-ZU-uFh"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SXm-en-UMv">
+                                                <rect key="frame" x="10" y="78" width="82" height="22.333333333333329"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="250 ML" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jw-tF-lnL">
+                                                        <rect key="frame" x="0.0" y="0.0" width="82" height="22.333333333333332"/>
+                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="17"/>
+                                                        <color key="textColor" red="0.2201296231" green="0.52750155379999997" blue="0.99843409439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="0jw-tF-lnL" secondAttribute="bottom" id="H0A-4t-RfN"/>
+                                                    <constraint firstItem="0jw-tF-lnL" firstAttribute="top" secondItem="SXm-en-UMv" secondAttribute="top" id="gc4-VC-l5U"/>
+                                                    <constraint firstAttribute="trailing" secondItem="0jw-tF-lnL" secondAttribute="trailing" id="qkC-NL-cbQ"/>
+                                                    <constraint firstItem="0jw-tF-lnL" firstAttribute="leading" secondItem="SXm-en-UMv" secondAttribute="leading" id="xRW-jk-pe7"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="102" id="GN1-uR-dWc"/>
+                                            <constraint firstItem="SXm-en-UMv" firstAttribute="top" secondItem="Hde-T9-Gp4" secondAttribute="bottom" constant="40" id="Hk2-yL-hdF"/>
+                                            <constraint firstAttribute="trailing" secondItem="Hde-T9-Gp4" secondAttribute="trailing" constant="5" id="I2G-yx-eJe"/>
+                                            <constraint firstItem="Hde-T9-Gp4" firstAttribute="leading" secondItem="83p-OK-1p2" secondAttribute="leading" constant="5" id="Rhj-jf-IXk"/>
+                                            <constraint firstAttribute="bottom" secondItem="SXm-en-UMv" secondAttribute="bottom" constant="35.670000000000002" id="c30-Yf-Ebm"/>
+                                            <constraint firstAttribute="trailing" secondItem="SXm-en-UMv" secondAttribute="trailing" constant="10" id="egj-I1-bdq"/>
+                                            <constraint firstItem="Hde-T9-Gp4" firstAttribute="top" secondItem="83p-OK-1p2" secondAttribute="top" constant="8" id="wwN-Ka-IrZ"/>
+                                            <constraint firstItem="SXm-en-UMv" firstAttribute="leading" secondItem="83p-OK-1p2" secondAttribute="leading" constant="10" id="ySE-ae-lrM"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nF8-QI-Tiy">
+                                <rect key="frame" x="19.999999999999993" y="328" width="110.33333333333331" height="22.333333333333314"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latest Drinks" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tan-jj-lhl">
+                                        <rect key="frame" x="0.0" y="0.0" width="110.33333333333333" height="22.333333333333332"/>
+                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="17"/>
+                                        <color key="textColor" red="0.2201296231" green="0.52750155379999997" blue="0.99843409439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZsD-c5-ALo">
+                                <rect key="frame" x="0.0" y="360.33333333333326" width="394" height="491.66666666666674"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="81" id="QdA-3O-S1z" customClass="DrinksTableViewCell" customModule="CheckMyLiquid" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="394" height="81"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QdA-3O-S1z" id="jC8-Rb-d9L">
+                                            <rect key="frame" x="0.0" y="0.0" width="394" height="81"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kFp-X8-Qbq">
+                                                    <rect key="frame" x="20" y="20" width="354" height="41"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Water" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zks-8A-ih9">
+                                                            <rect key="frame" x="58" y="14" width="41.333333333333343" height="13"/>
+                                                            <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="250 ml" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDD-fh-aFu">
+                                                            <rect key="frame" x="297.33333333333331" y="14" width="48.666666666666686" height="13"/>
+                                                            <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="water" translatesAutoresizingMaskIntoConstraints="NO" id="rL7-iT-Jfk">
+                                                            <rect key="frame" x="8" y="1" width="30" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="30" id="HCk-kL-koI"/>
+                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="aQb-Dj-uIP"/>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="fxT-qI-Hd1"/>
+                                                                <constraint firstAttribute="height" constant="30" id="hEh-Fg-qhZ"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="rL7-iT-Jfk" firstAttribute="leading" secondItem="kFp-X8-Qbq" secondAttribute="leadingMargin" id="JI6-sO-iPH"/>
+                                                        <constraint firstItem="FDD-fh-aFu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zks-8A-ih9" secondAttribute="trailing" constant="8" symbolic="YES" id="faU-CU-95F"/>
+                                                        <constraint firstItem="zks-8A-ih9" firstAttribute="top" secondItem="kFp-X8-Qbq" secondAttribute="top" constant="14" id="jIZ-vz-HIe"/>
+                                                        <constraint firstItem="FDD-fh-aFu" firstAttribute="top" secondItem="kFp-X8-Qbq" secondAttribute="top" constant="14" id="jXs-TL-NGz"/>
+                                                        <constraint firstAttribute="trailing" secondItem="FDD-fh-aFu" secondAttribute="trailing" constant="8" id="jk6-bm-wam"/>
+                                                        <constraint firstAttribute="bottom" secondItem="FDD-fh-aFu" secondAttribute="bottom" constant="14" id="lpq-PW-4SZ"/>
+                                                        <constraint firstAttribute="bottom" secondItem="rL7-iT-Jfk" secondAttribute="bottom" constant="10" id="ltN-v1-A16"/>
+                                                        <constraint firstAttribute="bottom" secondItem="zks-8A-ih9" secondAttribute="bottom" constant="14" id="pMs-Iw-AYy"/>
+                                                        <constraint firstItem="zks-8A-ih9" firstAttribute="leading" secondItem="rL7-iT-Jfk" secondAttribute="trailing" constant="20" id="xhX-Mh-5Z1"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="kFp-X8-Qbq" firstAttribute="top" secondItem="jC8-Rb-d9L" secondAttribute="topMargin" constant="8" id="7vR-cP-xVT"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="kFp-X8-Qbq" secondAttribute="bottom" constant="8" id="Bny-kS-fTj"/>
+                                                <constraint firstItem="kFp-X8-Qbq" firstAttribute="leading" secondItem="jC8-Rb-d9L" secondAttribute="leadingMargin" id="iUr-eS-fpi"/>
+                                                <constraint firstItem="kFp-X8-Qbq" firstAttribute="trailing" secondItem="jC8-Rb-d9L" secondAttribute="trailingMargin" id="j72-WF-Mxo"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="amount" destination="FDD-fh-aFu" id="LpK-IO-iJR"/>
+                                            <outlet property="cellBackgroundView" destination="kFp-X8-Qbq" id="HQ7-Lj-qrg"/>
+                                            <outlet property="drink" destination="zks-8A-ih9" id="bsk-n9-o0N"/>
+                                            <outlet property="drinkImage" destination="rL7-iT-Jfk" id="SZs-76-X3m"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.98431372640000003" green="0.99215686319999996" blue="0.99607843159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="nF8-QI-Tiy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="220-nb-eKo"/>
+                            <constraint firstItem="ZsD-c5-ALo" firstAttribute="top" secondItem="nF8-QI-Tiy" secondAttribute="bottom" constant="10" id="8wc-E3-8LY"/>
+                            <constraint firstItem="qnE-pi-bvi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="Gv7-oS-jxX"/>
+                            <constraint firstAttribute="bottom" secondItem="ZsD-c5-ALo" secondAttribute="bottom" id="WBp-ZH-Ejl"/>
+                            <constraint firstItem="nF8-QI-Tiy" firstAttribute="top" secondItem="qnE-pi-bvi" secondAttribute="bottom" constant="25" id="jYc-lt-ub8"/>
+                            <constraint firstItem="ZsD-c5-ALo" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mTD-hG-Rvf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qnE-pi-bvi" secondAttribute="trailing" constant="20" id="up3-Ki-sQ8"/>
+                            <constraint firstItem="qnE-pi-bvi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="z2b-cE-D46"/>
+                            <constraint firstItem="ZsD-c5-ALo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="z2j-dy-Dvd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Dashboard" id="Xdt-YK-6jq">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="xBa-ab-dzU">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="38H-pC-Nd1">
+                                <rect key="frame" x="16" y="3.6666666666666679" width="87" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="delete.left" catalog="system"/>
+                                <connections>
+                                    <action selector="deleteAllDrinksTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kbB-w8-uK0"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="36d-Fz-rE7">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="IGQ-WM-m2d">
+                                <rect key="frame" x="290" y="3.6666666666666679" width="87" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system">
+                                    <color key="baseForegroundColor" red="0.2201296231" green="0.52750155379999997" blue="0.99843409439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addDrinksButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E4o-v3-uJh"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="juiceLable" destination="0jw-tF-lnL" id="BR7-F9-JPl"/>
+                        <outlet property="mojitoLable" destination="055-EL-hdo" id="L14-7g-I1u"/>
+                        <outlet property="tableView" destination="ZsD-c5-ALo" id="b26-XR-iHl"/>
+                        <outlet property="waterLable" destination="oca-gn-CYQ" id="y0R-3j-gpa"/>
+                        <segue destination="cce-yb-Kw5" kind="presentation" identifier="drinks" id="rDb-nd-YsS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="910.68702290076328" y="3.5211267605633805"/>
+        </scene>
+        <!--Add Drinks View Controller-->
+        <scene sceneID="XCC-0L-xoG">
+            <objects>
+                <viewController id="cce-yb-Kw5" customClass="AddDrinksViewController" customModule="CheckMyLiquid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="REA-qY-tPe">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qnE-hR-bPd">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="108"/>
+                                <items>
+                                    <navigationItem title="Add a new Drink" id="yjE-Ii-Xtk"/>
+                                </items>
+                            </navigationBar>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8wf-9w-h5H">
+                                <rect key="frame" x="0.0" y="123" width="393" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Co9-QK-opw" customClass="SaveButton" customModule="CheckMyLiquid" customModuleProvider="target">
+                                <rect key="frame" x="100" y="354" width="193" height="47"/>
+                                <color key="backgroundColor" red="0.2201296231" green="0.52750155379999997" blue="0.99843409439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="GKH-AT-2PO"/>
+                                </constraints>
+                                <color key="tintColor" red="0.98431372640000003" green="0.99215686319999996" blue="0.99607843159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save my drink"/>
+                                <connections>
+                                    <action selector="drinksButtonTapped:" destination="cce-yb-Kw5" eventType="touchUpInside" id="fSZ-z1-oXx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="swa-tT-WIS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8wf-9w-h5H" firstAttribute="trailing" secondItem="swa-tT-WIS" secondAttribute="trailing" id="0cb-CW-spm"/>
+                            <constraint firstItem="Co9-QK-opw" firstAttribute="top" secondItem="8wf-9w-h5H" secondAttribute="bottom" constant="15" id="34j-aR-GBL"/>
+                            <constraint firstItem="8wf-9w-h5H" firstAttribute="leading" secondItem="swa-tT-WIS" secondAttribute="leading" id="9Z7-oa-Nc9"/>
+                            <constraint firstItem="8wf-9w-h5H" firstAttribute="top" secondItem="qnE-hR-bPd" secondAttribute="bottom" constant="15" id="MNg-BW-15g"/>
+                            <constraint firstItem="qnE-hR-bPd" firstAttribute="trailing" secondItem="swa-tT-WIS" secondAttribute="trailing" id="PJL-1L-ei1"/>
+                            <constraint firstItem="swa-tT-WIS" firstAttribute="trailing" secondItem="Co9-QK-opw" secondAttribute="trailing" constant="100" id="cP3-ip-NHj"/>
+                            <constraint firstItem="Co9-QK-opw" firstAttribute="leading" secondItem="swa-tT-WIS" secondAttribute="leading" constant="100" id="car-74-Dg7"/>
+                            <constraint firstItem="qnE-hR-bPd" firstAttribute="leading" secondItem="swa-tT-WIS" secondAttribute="leading" id="gCA-nL-7A1"/>
+                            <constraint firstItem="qnE-hR-bPd" firstAttribute="top" secondItem="swa-tT-WIS" secondAttribute="top" id="nb8-LC-VGm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="drinksPickerView" destination="8wf-9w-h5H" id="Ujj-uS-3GD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZoP-dB-8lX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1620.6106870229007" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="J2g-aP-aBE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ngy-cQ-klV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="525-2D-7eQ">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.22012962314929851" green="0.52750155379270858" blue="0.99843409442410036" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="DRn-C8-DwD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x4W-6L-ZdR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-16.030534351145036" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="delete.left" catalog="system" width="128" height="102"/>
+        <image name="juice" width="512" height="512"/>
+        <image name="mojito" width="512" height="512"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="water" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
